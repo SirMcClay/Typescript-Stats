@@ -20,5 +20,6 @@ matchReader.load();
 //   new WinsAnalysis('Man United'),
 //   new ConsoleReport()
 // );
-const summary = new Summary(new WinsAnalysis('Man United'), new HtmlReport());
+// const summary = new Summary(new WinsAnalysis('Man United'), new HtmlReport());
+const summary = Summary.winsAnalysisWithHtmlReport('Man United');
 summary.buildAndPrintReport(matchReader.matches);
